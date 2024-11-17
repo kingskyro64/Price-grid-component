@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+} 
+
+:root{ 
+    --team-builder-red: hsl(0, 78%, 62%);
+    --supervisor-cyan: hsl(180, 62%, 55%);
+    --karma-orange: hsl(34, 97%, 64%); 
+    --calculator-blue: hsl(212, 86%, 64%);
+    --background-color: hsl(0, 0%, 98%);
+    --headers-color: hsl(234, 12%, 34%);
+    --paragraphs-color: hsl(229, 6%, 66%);
+    --Cards-background: white;
+}
+
+body{ 
+    background-color: var(--background-color); 
+    font-family: 'Poppins' , cursive;
+}
+
+.intro-header-two{ 
+    font-weight: 600;
+    font-size: 2em;
+}
+
+h1{ 
+    color: var(--headers-color);
+    padding-top: 1%;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+p{
+    color: var(--paragraphs-color);
+    padding-top: 2%;
+    font-weight: 200;
+    font-size: 1em;
+}
+
+
+
+main{ 
+    display: flex;
+    flex-direction: column; 
+    max-width: 70rem; 
+    margin: 1rem auto;
+} 
+
+.intro{ 
+    text-align: center; 
+    /* background-color: orangered; */
+    margin: 2em auto;
+}
+
+
+
+.team-builder{
+    background-color: var(--Cards-background);
+    max-width: 20rem;
+    padding: 2em;
+    border-top: var(--team-builder-red) solid 5px;
+    border-radius: 1rem;
+    margin: 2em auto; 
+}
+
+img{
+    max-width: 3em;
+}
+
+.calculator{
+    background-color: var(--Cards-background);
+    max-width: 20rem;
+    padding: 2em;
+    border-top: var(--calculator-blue) solid 5px;
+    border-radius: 1em;
+    margin: 2em auto; 
+}
+
+.supervisor{
+    background-color: var(--Cards-background);
+    max-width: 20rem;
+    padding: 2em;
+    border-top: var(--supervisor-cyan) solid 5px;
+    border-radius: 1em;
+    margin: 2em auto; 
+}
+
+.karma{
+    background-color: var(--Cards-background);
+    max-width: 20rem;
+    padding: 2em;
+    border-top: var(--karma-orange) solid 5px;
+    border-radius: 1em;
+    margin: 2em auto; 
+}
+
+@media (min-width:1170px) {
+    .calculator{
+        margin-left: 50em ;
+    }
+
+    .supervisor{
+        position: absolute;
+        margin-top: 25em;
+    }
+
+    .calculator{
+        position: absolute;
+        margin-top: 25em;
+    }
+}
